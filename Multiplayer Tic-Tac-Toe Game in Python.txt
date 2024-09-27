@@ -1,0 +1,50 @@
+# Networked Tic-Tac-Toe Game
+
+This project implements a simple networked Tic-Tac-Toe game using Python. It allows two players to play Tic-Tac-Toe over a local network connection.
+
+## Features
+
+- Play Tic-Tac-Toe against another player over a network
+- Host a game or connect to an existing game
+- Simple command-line interface
+- Automatic win/loss/tie detection
+
+## Files
+
+- `main.py`: Contains the code for hosting a Tic-Tac-Toe game
+- `main2.py`: Contains the code for connecting to a hosted Tic-Tac-Toe game
+
+## How to Play
+
+1. One player runs `main.py` to host the game:
+   ```
+   python main.py
+   ```
+
+2. The other player runs `main2.py` to connect to the hosted game:
+   ```
+   python main2.py
+   ```
+
+3. Players take turns entering their moves in the format "row,column" (e.g., "0,0" for the top-left corner)
+
+4. The game continues until one player wins or the game ends in a tie
+
+## Requirements
+
+- Python 3.x
+- Socket module (built-in)
+- Threading module (built-in)
+
+## Network Configuration
+
+By default, the game is set up to run on `localhost` at port `9999`. To play over a network, modify the host address in both files to the appropriate IP address.
+
+## Future Improvements
+
+- Add a graphical user interface
+- Implement error handling for network issues
+- Allow players to choose their symbols
+- Add an option for playing against an AI opponent
+
+Feel free to contribute to this project by submitting pull requests or reporting issues!
